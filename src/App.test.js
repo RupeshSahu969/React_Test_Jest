@@ -1,8 +1,19 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('test First React test case', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  // Removed trailing space from the regex
+  const text = screen.getByText(/First React test case/i);
+  const text2 = screen.getByText("Raja");
+
+  expect(text).toBeInTheDocument();
+
+  expect(text2).toBeInTheDocument();
+
+  
+
+
+
 });
