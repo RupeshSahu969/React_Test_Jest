@@ -1,19 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('test First React test case', () => {
+test('getAllByRole', () => {
   render(<App />);
 
-  // Removed trailing space from the regex
-  const text = screen.getByText(/First React test case/i);
-  const text2 = screen.getByText("Raja");
+  const btns = screen.getAllByRole("button");
 
-  expect(text).toBeInTheDocument();
+  btns.forEach((btn) => {
 
-  expect(text2).toBeInTheDocument();
-
-  
-
-
-
+    expect(btn).toBeInTheDocument();
+    
+  });
 });

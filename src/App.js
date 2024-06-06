@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <p>First React test case </p>
-      <p>Raja </p>
+     <h1>RTL Query :  getAllByRole</h1>
+     <button>Click Me</button>
+     <button>Click Me</button>
     </div>
   );
+
 }
 
 export default App;
