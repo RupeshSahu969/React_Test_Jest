@@ -5,9 +5,9 @@ function App() {
 
   return (
     <div className="App">
-     <h1>RTL Query :  getAllByRole</h1>
-     <button>Click Me</button>
-     <button>Click Me</button>
+     <h1>RTL Query :  ByPlaceholderText</h1>
+     <input type='text'placeholder='enter username' />
+     <input type='text'placeholder='enter username' />
     </div>
   );
 

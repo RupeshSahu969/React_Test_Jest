@@ -2,19 +2,13 @@ import { render, screen } from '@testing-library/react';
 
 import App from './App';
 
-test('getAllByRole', () => {
+test('test case for multiple input fields', () => {
 
   render(<App />);
 
-  const btns = screen.getAllByRole("button");
+  const inputs=screen.getAllByPlaceholderText("enter username")
 
-  btns.forEach((btn) => {
-
-    expect(btn).toBeInTheDocument();
-
-    expect(btn).toBeInTheDocument();
-    
-  });
+  expect(inputs[1]).toBeInTheDocument();
 
 
 });
